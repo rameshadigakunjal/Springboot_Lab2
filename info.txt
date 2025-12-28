@@ -1,0 +1,22 @@
+clean the package: mvnw.cmd clean package 
+
+default port: mvnw.cmd spring-boot:run   [8080]
+
+mvnw.cmd spring-boot:run -Dspring-boot.run.arguments="--server.port=8081"
+
+
+------------------------
+
+
+Use the wrapper with a backslash, not a dot-bracket:
+
+PowerShell (recommended):
+
+.[mvnw.cmd](http://_vscodecontentref_/0) clean package
+.[mvnw.cmd](http://_vscodecontentref_/1) spring-boot:run
+After package exists: java -jar target\demo-0.0.1-SNAPSHOT.jar
+cmd.exe:
+
+mvnw.cmd clean package
+mvnw.cmd spring-boot:run
+
